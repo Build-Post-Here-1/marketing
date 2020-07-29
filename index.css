@@ -42,9 +42,10 @@ header nav{
 
 a{
     color: black;
-    border: 2px dotted salmon;
+    border: 2px solid salmon;
     border-radius: 8px;
     padding:0.5%;
+    text-decoration: none;
 }
 
 a:hover{
@@ -52,13 +53,32 @@ a:hover{
     transition: .3s;
 }
 
+button{
+    background-color: red;
+    border: none;
+    color:white;
+    margin-top:1%;
+    font-family: arial;
+}
+
+#home{
+    border-bottom: 2px dotted salmon;
+}
+
+#about{
+    margin-bottom: 2%;
+}
+
+#contact{
+    border-top: 2px dotted salmon;
+}
 /* images */
 
 img{
     border-radius:8px;
 }
 
-/* contact form */
+/* contact */
 
 ul{
     padding:1%;
@@ -79,7 +99,7 @@ ul{
 
 .bigContainer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .container1, .container2{
@@ -88,14 +108,22 @@ ul{
     align-items: center;
 }
 
+footer a{
+    border:none;
+    text-decoration-line: underline;
+}
 
 @media (max-width:500px){
     header nav{
         display: flex;
-        flex-direction:column ;
+        flex-direction:column ; 
+        align-items: center;
     }
     a{
+        width: 20%;
         border: none;
+        border: 2px solid salmon;
+        margin:.5%;
     }
     img{
         max-width: 100%;
@@ -103,5 +131,10 @@ ul{
     .bigContainer{
         display: flex;
         flex-direction: column;
+    }
+
+    button{
+        padding:1%;
+        width:20%;
     }
 }
