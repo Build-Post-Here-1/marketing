@@ -25,19 +25,20 @@ html {
 
 *{
 font-family: 'Arvo', serif;
-border: 1px solid grey;
+/* border: 1px solid grey; */
 
 }
 
 header {
 	display: flex;
-	background-image: linear-gradient(to bottom, crimson, indianred);
+	background-image: linear-gradient(to right,orangered, crimson, indianred);
 	border-bottom: 3px solid white;
 }
 
 footer {
 	display: flex;
-	background-image: linear-gradient(to bottom, crimson, indianred);
+	justify-content: space-between;
+	background-image: linear-gradient(to right, orangered, crimson, indianred);
 	padding: 1.5% 0;
 }
 
@@ -49,15 +50,21 @@ nav {
 	
 }
 
+nav a{
+	letter-spacing: 3px;
+}
+
 a {
 	color: white;
 	padding: 2%;
 	text-decoration: none;
 	font-size: 1.5rem;
+	
 }
 
-a:hover{
+nav a:hover{
 	text-decoration: underline;
+	letter-spacing: 4px;
 }
 
 .intro {
@@ -83,7 +90,7 @@ a:hover{
 }
 
 .feature-wrapper{
-	background-image: linear-gradient(to bottom, crimson, indianred);
+	background-image: linear-gradient(to bottom, orangered, crimson, indianred);
 	border-bottom: 3px solid white;
 	border-top: 3px solid white;
 }
@@ -93,7 +100,7 @@ a:hover{
 	flex-flow: column wrap;
 	justify-content: space-around;
 	align-items: center;
-	background-image: linear-gradient(to bottom, snow, seashell);
+	background-image: linear-gradient(to right, snow, antiquewhite);
 	border-top: 3px solid white;
 	width: 80%;
 	margin: auto;
@@ -102,12 +109,11 @@ a:hover{
 }
 
 .panels div {
-	margin: 3% 0;
+	margin: 1.5% 0;
 	padding: 2%;
 	width: 55%;
 	text-align: center;
-	
-	/* border-bottom: 3px solid crimson; */
+	/* border: 3px solid crimson; */
 }
 
 .panels img {
@@ -117,23 +123,24 @@ a:hover{
 .panels h3{
 	padding: 1.5% 0;
 	margin-bottom: 2%;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	text-decoration: underline;
 	font-family: 'Bungee Inline', cursive;
 }
 
 .panels p{
 	padding: 1.5% 0;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .contact {
 	display: flex;
 	flex-flow: column wrap;
 	color: white;
-	text-align: center;
+	text-align: right;
 	font-size: 1.5rem;
-	margin-left: 50%;
+	padding: 0 3%;
+	
 }
 
 .contact h3 {
@@ -154,6 +161,7 @@ a:hover{
 	padding: 3% 0;
 	text-align: center;
 	align-items: center;
+	background-image: url('Design/brick-4956032_1920.jpg');
 
 }
 
@@ -161,6 +169,7 @@ a:hover{
 	padding: 2% 0;
 	font-size: 5rem;
 	font-family: 'Bungee Inline', cursive;
+	color: crimson;
 }
 
 
@@ -168,7 +177,7 @@ a:hover{
 	display: flex;
 	flex-flow: column wrap;
 	text-align: center;
-	background-image: linear-gradient(to bottom, snow, seashell);
+	background-image: linear-gradient(to right, snow, antiquewhite);
 	width: 80%;
 	margin: auto;
 	border-radius: 15%;
@@ -193,26 +202,98 @@ a:hover{
 	display: flex;
 	flex-flow: row wrap;
 	padding: 2% 0;
-	width: 70%;
+	width: 80%;
 	margin: auto;
 	justify-content: center;
 
 }
 
 .team-boxes div{
-	margin: 2%;
+	margin: 2% 5%;
 	padding: 2% 0;
-	width: 30%;
+	width: 35%;
 	text-align: center;
-
 }
 
 .team-boxes div h3 {
 	font-size: 2rem;
 	margin-bottom: 3%;
+	font-family: 'Bungee Inline', cursive;
 }
 
 .team-boxes div p{
 	font-size: 1.5rem;
 	width: 90%;
+}
+
+/* Responsive Design */
+
+@media(max-width:800px) {
+
+
+	header nav {
+		display:flex;
+		flex-flow: column wrap;
+		text-align: center;
+		margin: auto;
+	}
+
+	.intro img {
+		width: 10%;
+	}
+
+	.intro h1 {
+		font-size: 4rem;
+	}
+
+	.panels{
+		width: 95%;
+	}
+
+	.panels div{
+		width: 75%
+	}
+
+	footer {
+		display: flex;
+		flex-flow: column wrap;
+		text-align: center;
+	
+	}
+
+	footer nav {
+		margin: auto;
+
+	}
+
+	.contact {
+		margin: auto;
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.contact a {
+		font-size: 1rem;
+	}
+
+/* About Page Specific */
+
+	.team-section {
+		width: 95%;
+	}
+
+	.team-boxes {
+		display: flex;
+		flex-flow: column wrap;
+		width: 85%;
+	}
+
+	.team-boxes div {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 3%;
+		padding: 3%;
+
+	}
+
 }
