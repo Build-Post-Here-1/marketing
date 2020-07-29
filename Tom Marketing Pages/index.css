@@ -183,20 +183,16 @@ nav a:hover{
 	border-radius: 15%;
 }
 
-.team-section h2{
-	padding: 2% 0;
-	font-size: 2.5rem;
-	font-family: 'Bungee Inline', cursive;
-	text-decoration: underline;
-}
 
 .team-section p {
 	padding: 2% 0;
 	width: 50%;
 	margin: auto;
-	font-size: 1.5rem;
+	font-size: 2rem;
 
 }
+
+
 
 .team-boxes{
 	display: flex;
@@ -233,9 +229,13 @@ nav a:hover{
 
 	header nav {
 		display:flex;
-		flex-flow: column wrap;
+		/* flex-flow: column wrap; */
 		text-align: center;
 		margin: auto;
+	}
+
+	nav a {
+		margin: 0 6%;
 	}
 
 	.intro img {
@@ -263,8 +263,8 @@ nav a:hover{
 
 	footer nav {
 		margin: auto;
-
 	}
+
 
 	.contact {
 		margin: auto;
