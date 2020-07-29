@@ -33,6 +33,11 @@ body{
     padding:.5%;
 }
 
+span.italic{
+    font-style: italic;
+    font-weight: bold;
+}
+
 /* header and a tags */
 header nav{
     display: flex;
