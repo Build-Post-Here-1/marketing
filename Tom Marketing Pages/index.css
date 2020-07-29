@@ -25,7 +25,7 @@ html {
 
 *{
 font-family: 'Arvo', serif;
-/* border: 1px solid grey; */
+border: 1px solid grey;
 
 }
 
@@ -38,6 +38,7 @@ header {
 footer {
 	display: flex;
 	background-image: linear-gradient(to bottom, crimson, indianred);
+	padding: 1.5% 0;
 }
 
 nav {
@@ -71,7 +72,7 @@ a:hover{
 .intro h1 {
 	margin: 2% 0;
 	padding: 2%;
-	font-size: 4rem;
+	font-size: 5rem;
 	font-family: 'Bungee Inline', cursive;
 	color: crimson;
 	
@@ -94,7 +95,7 @@ a:hover{
 	align-items: center;
 	background-image: linear-gradient(to bottom, snow, seashell);
 	border-top: 3px solid white;
-	width: 70%;
+	width: 80%;
 	margin: auto;
 	border-radius: 15%;
 
@@ -126,33 +127,28 @@ a:hover{
 	font-size: 1.5rem;
 }
 
-
-/* .contact{
+.contact {
 	display: flex;
 	flex-flow: column wrap;
-	align-items: center;
+	color: white;
 	text-align: center;
-	padding: 2% 0;
+	font-size: 1.5rem;
+	margin-left: 50%;
 }
 
-.contact h3{
-	margin: 1.5% 0;
-	font-size: 2rem;
-	font-family: 'Bungee Inline', cursive;
+.contact h3 {
 	text-decoration: underline;
 }
 
-.contact ul{
-	width: 25%;
+.contact ul {
 	list-style: none;
-	font-size: 1.5rem;
-} */
+}
 
 
 
 /* About Page Specific Styles */
 
-.about-body{
+.about-title{
 	display: flex;
 	flex-flow: column wrap;
 	padding: 3% 0;
@@ -161,36 +157,62 @@ a:hover{
 
 }
 
-.about-body h1{
+.about-title h1{
 	padding: 2% 0;
-	font-size: 4rem;
+	font-size: 5rem;
 	font-family: 'Bungee Inline', cursive;
 }
 
-.about-body p{
-	margin: 2% 0;
-	font-size: 2rem;
-	width: 40%;
+
+.team-section {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+	background-image: linear-gradient(to bottom, snow, seashell);
+	width: 80%;
+	margin: auto;
+	border-radius: 15%;
 }
 
-
-
 .team-section h2{
-	text-align: center;
 	padding: 2% 0;
 	font-size: 2.5rem;
 	font-family: 'Bungee Inline', cursive;
+	text-decoration: underline;
+}
+
+.team-section p {
+	padding: 2% 0;
+	width: 50%;
+	margin: auto;
+	font-size: 1.5rem;
 
 }
 
 .team-boxes{
 	display: flex;
-	justify-content: center;
+	flex-flow: row wrap;
 	padding: 2% 0;
+	width: 70%;
+	margin: auto;
+	justify-content: center;
 
 }
 
 .team-boxes div{
-	margin: 0 2%;
+	margin: 2%;
+	padding: 2% 0;
+	width: 30%;
+	text-align: center;
 
+}
+
+.team-boxes div h3 {
+	font-size: 2rem;
+	margin-bottom: 3%;
+}
+
+.team-boxes div p{
+	font-size: 1.5rem;
+	width: 90%;
 }
