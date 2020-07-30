@@ -1,107 +1,300 @@
-html, body, div, span, applet, object, iframe, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bungee+Inline&display=swap');
+
+
+body, div, span, object, 
+h1, h2, h3, h4, h5, h6, p,
+a, address, code,
+del, dfn, em, img, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+ footer, header, hgroup, 
+menu, nav, output, section {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    max-width: 100%;
+
+}
+
+html {
+	font-size: 62.5%;
+	
+}
+
+*{
+font-family: 'Arvo', serif;
+/* border: 1px solid grey; */
+
+}
+
+header {
+	display: flex;
+	background-image: linear-gradient(to right,orangered, crimson, indianred);
+	border-bottom: 3px solid white;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-image: linear-gradient(to right, orangered, crimson, indianred);
+	padding: 1.5% 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	width: 35%;
+	padding: 2%;
+	
+}
+
+nav a{
+	letter-spacing: 3px;
+}
+
+a {
+	color: white;
+	padding: 2%;
+	text-decoration: none;
+	font-size: 1.5rem;
+	
+}
+
+nav a:hover{
+	text-decoration: underline;
+	letter-spacing: 4px;
+}
+
+.intro {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+	align-items: center;
+	padding: 3%;
+	background-image: url('Design/brick-4956032_1920.jpg');
+}
+
+.intro h1 {
+	margin: 2% 0;
+	padding: 2%;
+	font-size: 5rem;
+	font-family: 'Bungee Inline', cursive;
+	color: crimson;
+	
+}
+
+.intro img {
+	width: 5%;
+}
+
+.feature-wrapper{
+	background-image: linear-gradient(to bottom, orangered, crimson, indianred);
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;
+}
+
+.panels {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(to right, snow, antiquewhite);
+	border-top: 3px solid white;
+	width: 80%;
+	margin: auto;
+	border-radius: 15%;
+
+}
+
+.panels div {
+	margin: 1.5% 0;
+	padding: 2%;
+	width: 55%;
+	text-align: center;
+}
+
+.panels img {
+	width: 10%;
+}
+
+.panels h3{
+	padding: 1.5% 0;
+	margin-bottom: 2%;
+	font-size: 2.5rem;
+	text-decoration: underline;
+	font-family: 'Bungee Inline', cursive;
+}
+
+.panels p{
+	padding: 1.5% 0;
+	font-size: 2rem;
+}
+
+.contact {
+	display: flex;
+	flex-flow: column wrap;
+	color: white;
+	text-align: right;
+	font-size: 1.5rem;
+	padding: 0 3%;
+	
+}
+
+.contact h3 {
+	text-decoration: underline;
+}
+
+.contact ul {
+	list-style: none;
 }
 
 
-html{
-    scroll-behavior: smooth;
+
+/* About Page Specific Styles */
+
+.about-title{
+	display: flex;
+	flex-flow: column wrap;
+	padding: 3% 0;
+	text-align: center;
+	align-items: center;
+	background-image: url('Design/brick-4956032_1920.jpg');
+
 }
 
-/* body */
-body{
-    color: darkred;
-    background-color: mistyrose;
-    font-family: Helvetica;
-    text-align: center;
-    margin:1%;
-    padding:.5%;
-}
-
-/* header and a tags */
-header nav{
-    display: flex;
-    justify-content: space-evenly;
-    padding:1%;
-}
-
-a{
-    color: black;
-    border: 2px dotted salmon;
-    border-radius: 8px;
-    padding:0.5%;
-}
-
-a:hover{
-    background-color: gainsboro;
-    transition: .3s;
-}
-
-/* images */
-
-img{
-    border-radius:8px;
-}
-
-/* contact form */
-
-ul{
-    padding:1%;
-    list-style: none;
-}
-
-/* about page */
-
-#about2 img{
-    margin-right: 5%;
-    max-width: 35%;
-}
-
-#about2 p{
-    display: flex;
-    justify-content: start;
-}
-
-.bigContainer{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.container1, .container2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about-title h1{
+	padding: 2% 0;
+	font-size: 5rem;
+	font-family: 'Bungee Inline', cursive;
+	color: crimson;
 }
 
 
-@media (max-width:500px){
-    header nav{
-        display: flex;
-        flex-direction:column ;
-    }
-    a{
-        border: none;
-    }
-    img{
-        max-width: 100%;
-    }
-    .bigContainer{
-        display: flex;
-        flex-direction: column;
-    }
+.team-section {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+	background-image: linear-gradient(to right, snow, antiquewhite);
+	width: 80%;
+	margin: auto;
+	border-radius: 15%;
+}
+
+
+.team-section p {
+	padding: 2% 0;
+	width: 50%;
+	margin: auto;
+	font-size: 2rem;
+
+}
+
+.team-boxes{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 2% 0;
+	width: 80%;
+	margin: auto;
+	justify-content: center;
+
+}
+
+.team-boxes div{
+	margin: 1% 5%;
+	padding: 2% 0;
+	width: 35%;
+	text-align: center;
+}
+
+.team-boxes img {
+	width: 60%;
+	border: 3px solid black;
+}
+
+.team-boxes div h3 {
+	font-size: 2rem;
+	margin: 2% 0;
+	font-family: 'Bungee Inline', cursive;
+}
+
+.team-boxes div p{
+	font-size: 1.5rem;
+	width: 90%;
+}
+
+/* Responsive Design */
+
+@media(max-width:800px) {
+
+
+	header nav {
+		display:flex;
+		/* flex-flow: column wrap; */
+		text-align: center;
+		margin: auto;
+	}
+
+	nav a {
+		margin: 0 6%;
+	}
+
+	.intro img {
+		width: 10%;
+	}
+
+	.intro h1 {
+		font-size: 4rem;
+	}
+
+	.panels{
+		width: 95%;
+	}
+
+	.panels div{
+		width: 75%
+	}
+
+	footer {
+		display: flex;
+		flex-flow: column wrap;
+		text-align: center;
+	
+	}
+
+	footer nav {
+		margin: auto;
+	}
+
+	.contact {
+		margin: auto;
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.contact a {
+		font-size: 1rem;
+	}
+
+/* About Page Specific */
+
+	.team-section {
+		width: 95%;
+	}
+
+	.team-boxes {
+		display: flex;
+		flex-flow: column wrap;
+		width: 85%;
+	}
+
+	.team-boxes div {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 3%;
+		padding: 3%;
+
+	}
+
 }

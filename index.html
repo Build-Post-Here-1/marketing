@@ -1,44 +1,84 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Post Here</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="index.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
 <body>
+
     <header>
+        
         <nav>
-            <a href='#home' class = 'title'>Post Here</a>
-            <a href='#home'>Home</a>
-            <a href='about1.html'>About</a>
-            <a href='#contact'>Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="https://front-end-ten-eta.vercel.app/signUp">Login/Register</a>
         </nav>
     </header>
-    <section id='home'>
-        <h1>Post Here</h1>
-        <img src ='https://picsum.photos/500/200'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <section>
+        <div class='intro'>
+            <img alt='Reddit icon' src="Design/reddit.png">
+            <h1>Find the Perfect Subreddit</h1>
+        </div>
     </section>
-    <section id='about'>
-        <h2>About</h2>
-        <img src ='https://picsum.photos/300/200'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor elit sed vulputate mi sit amet mauris commodo quis. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Interdum consectetur libero id faucibus nisl tincidunt. Ut eu sem integer vitae. Urna molestie at elementum eu facilisis. Id leo in vitae turpis. Elementum integer enim neque volutpat ac. Suscipit tellus mauris a diam. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Etiam dignissim diam quis enim lobortis. Ullamcorper malesuada proin libero nunc consequat. Ac turpis egestas maecenas pharetra convallis posuere. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Purus non enim praesent elementum facilisis. Nunc vel risus commodo viverra maecenas accumsan lacus. Nunc congue nisi vitae suscipit tellus mauris. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus.</p>
-        <a href='about1.html'>Learn More</a>
+
+    <section>
+        <div class='feature-wrapper'>
+            <div class='panels'>
+                <div class='panel-one'>
+                    <img alt='Network connection icon' src='Design/relationship.png'> 
+                    <!-- https://www.flaticon.com/free-icon/nodes_3079394?term=node&page=1&position=17 -->
+                    <h3>Find What You're Looking for fast</h3>
+                    <p>
+                        Reddit is a wonderful website brimming with interesting communities to explore. But for the uninitiated,
+                         finding the right place for your post can be overwhelming. Look no further! We've built a tool that takes your interests
+                         and pairs you with the best subreddits to discuss them.
+                    </p>
+                </div>
+                <div class='panel-two'>
+                    <img alt='Up and to the right arrow icon' src="Design/popular.png">
+                    <!-- https://www.flaticon.com/free-icon/trending_1946432?term=popular&page=1&position=12 -->
+                    <h3>Match your content with the people who want to see it</h3>
+                    <p>
+                        Have a hilarious video to share? A dank meme? A story about the most awkward moment of your entire life? We 
+                        want to make sure you post it in on the most compatible subreddit. If you're unsure what corner of reddit your content belongs in, you've 
+                        come to the right place!  
+                    </p>
+                </div>
+                <div class='panel-three'>
+                    <img alt='Question icon' src="Design/question.png">
+                    <!-- https://www.flaticon.com/free-icon/help_1660165?term=question&page=1&position=12 -->
+                    <h3>Never ask your questions in the wrong room again</h3>
+                    <p>
+                        Looking for movie,  video game, or book reccomendations? Trying to get career advice from redditors with your dream job? Eager to debate whether or not the top stopped spinning
+                        at the end of Inception? Our tool helps make sure that you're chatting with redditors who have the answers you need.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id='contact'>
-        <h2>Contact</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <ul>
-            <li><ul>Address: 
-                <li>1800 Tollfree Rd</li>
-                <li>San Mateo, CA 94027</li>
-                </ul></li>
-            <li>Email: postheresupport@gmail.com</li>
-            <li>Phone: 123-456-7890</li>
-        </ul>
-    </section>
+    
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href='about.html'>About</a>
+            <a href="https://front-end-ten-eta.vercel.app/signUp">Login/Register</a>
+        </nav>
+
+        <div class='contact'>
+            <h3>Contact Us</h3>
+            <ul>
+                <li>2020 Main Street</li>
+                <li>Anytown, USA 10101</li>
+                <li><a href="mailto:letushelp@subredditfinder.com">letushelp@subredditfinder.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
 
 </body>
 </html>
