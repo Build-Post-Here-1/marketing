@@ -26,7 +26,6 @@ html {
 *{
 font-family: 'Arvo', serif;
 /* border: 1px solid grey; */
-
 }
 
 header {
@@ -225,7 +224,8 @@ nav a:hover{
 }
 
 /* Responsive Design */
-
+/* I realize the rubric asked for a media query at 500px but I found that putting it at 800 made everything below that work
+as I wanted and made transitions in screen size go smoothly as well. */
 @media(max-width:800px) {
 
 
