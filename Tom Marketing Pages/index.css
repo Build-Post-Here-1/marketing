@@ -113,7 +113,6 @@ nav a:hover{
 	padding: 2%;
 	width: 55%;
 	text-align: center;
-	/* border: 3px solid crimson; */
 }
 
 .panels img {
@@ -192,8 +191,6 @@ nav a:hover{
 
 }
 
-
-
 .team-boxes{
 	display: flex;
 	flex-flow: row wrap;
@@ -205,10 +202,14 @@ nav a:hover{
 }
 
 .team-boxes div{
-	margin: 2% 5%;
+	margin: 1% 5%;
 	padding: 2% 0;
 	width: 35%;
 	text-align: center;
+}
+
+.team-boxes img {
+	width: 60%;
 }
 
 .team-boxes div h3 {
